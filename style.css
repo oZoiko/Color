@@ -362,9 +362,9 @@
     background-image: linear-gradient(to right top, #00deff, #00d0ff, #00c2ff, #00b3ff, #00a2ff, #6a96ff, #a285fa, #d06fe5, #ff5bb9, #ff5c83, #ff774c, #ff9b00);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
     .main__container{
-        width: 90%;
+        width: 95%;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr;
     }
@@ -373,16 +373,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 3vh auto;
     }
     .main__img--card{
         width: 90vw;
         height: 90vw;
     }
     .main__content{
-        display: flex;
-        flex-direction: column;
+        text-align: center;
     }
+    .scheduleACall__btn{
+        margin-top: 4vh;
+        margin-bottom: 3vh;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .main{
+        padding: 10vh 0;
+    } 
     .main__content h1{
         font-size: 1.5;
     }
@@ -392,5 +400,7 @@
     .main__content p{
         font-size: 1.5rem;
     }
+    
+
 }
 
